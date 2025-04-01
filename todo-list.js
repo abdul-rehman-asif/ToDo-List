@@ -1,10 +1,4 @@
-const todoList = [{
-  name: 'make dinner',
-  dueDate: '2022-12-22'
-}, {
-  name: 'wash dishes',
-  dueDate: '2022-12-22'
-}];
+const todoList = [];
 
 renderTodoList();
 
@@ -44,15 +38,14 @@ function addTodo() {
 
   const dateInputElement = document.querySelector('.js-due-date-input');
   const dueDate = dateInputElement.value;
-
-  todoList.push({
-    //name: name,
-    //dueDate: dueDate,
-    name,
-    dueDate
-  });
-
+  
+  if(name != '' && dueDate != ''){
+    todoList.push({
+      name,
+      dueDate
+    });
   inputElement.value = '';
 
   renderTodoList();
+  }
 }
