@@ -1,5 +1,8 @@
 body {
-  font-family: Arial;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+  color: rgb(215, 50, 50);
 }
 
 .todo-grid,
@@ -20,19 +23,22 @@ body {
 .due-date-input {
   font-size: 15px;
   padding: 6px;
+  border-radius: 10px;
 }
 
 .add-todo-button {
-  background-color: green;
+  background-color: rgb(41, 165, 41);
   color: white;
   border: none;
+  border-radius: 10px;
   font-size: 15px;
   cursor: pointer;
 }
 
 .delete-todo-button {
-  background-color: darkred;
+  background-color: rgb(222, 9, 9);
   color: white;
+  border-radius: 10px;
   border: none;
   font-size: 15px;
   cursor: pointer;
